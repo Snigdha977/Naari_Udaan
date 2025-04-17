@@ -2,12 +2,7 @@
 
 ## 📌 Project Overview
 **Naari Udaan** is a  multilingual AI-powered web platform designed to promote financial literacy and micro-investment education among rural women in India. It combines AI chat, sentiment detection, and gamified learning modules in local languages like Hindi, Bengali, and Marathi.
-
----
-
-## 🔄 Project Workflow
-![Workflow Diagram](workflow.png)
-
+----------
 ### 🧠 AI-Powered Interaction Flow
 1. **User Onboarding**
    - User selects preferred language and avatar.
