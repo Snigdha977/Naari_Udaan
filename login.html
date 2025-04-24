@@ -8,7 +8,6 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
-
     
  <i><h2>..! Welcome To Naari Udaan !..</h2></i> 
         </div>
@@ -20,10 +19,7 @@
           <a id="navbar"href="help.html">Help</a>
             </nav>
             </ul>
-
-
-     <!-- Google Translate -->
-
+             <!-- Google Translate -->
      <div id="google_translate_element"></div>
      <script type="text/javascript">
        function googleTranslateElementInit() {
@@ -34,19 +30,6 @@
        }
      </script>
      <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
- <i><h2>..! Welcome To Naari Udaan !..</h2></i> 
-        </div>
-        <ul>
-        <nav class="nav">
-        <a id="navbar" href="home.html">Home</a>
-         <a id="navbar" href="about.html">About Us</a>
-         <a id="navbar" href="contact.html">Contact Us</a>
-          <a id="navbar"href="help.html">Help</a>
-            </nav>
-            </ul>
-
    
     <div class="login-container">
         <div class="login">
@@ -113,9 +96,19 @@
 </div>
 </body>
 </html>
-
-
       </form>
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+     const loginForm = document.getElementById("loginForm");
+    
+     loginForm.addEventListener("submit", function (event) {
+     event.preventDefault(); // Stop form submission
+     window.location.href = "home.html"; // Redirect to home page
+     });
+    });
+    </script>
+    
+
 </body>
 </html>
