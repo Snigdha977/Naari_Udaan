@@ -1,13 +1,17 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    /* background-color: #f2f2f2; */
+    background: linear-gradient(to right, white, #d4f5dc); /* soft mint green */
     color: #333;
-    background-image: url("naarii.jpg");
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+   background: linear-gradient(to right, white, #d4f5dc); /* soft mint green */
+    
+    /* background-image: url("naarii.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
 
 
   }
