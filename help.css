@@ -1,21 +1,24 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background: linear-gradient(to right, white, #d4f5dc); /* soft mint green */
-    color: #333;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-   background: linear-gradient(to right, white, #d4f5dc); /* soft mint green */
+ 
     
-    /* background-image: url("naarii.jpg");
+    
+      background: linear-gradient(to right, white, #d4f5dc); /* soft mint green */
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      
+      
+      
+      
+    
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
-    background-size: cover; */
+    background-size: cover;
 
 
   }
-  
   .contact-section {
     padding: 50px 20px;
     max-width: 1200px;
