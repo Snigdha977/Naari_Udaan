@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Our website</title>
     <link rel="stylesheet" href="login.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
     
@@ -44,7 +45,46 @@
                 </div>
                 <button type="submit" class="login-button">Login</button>
             </form>
-            <p class="register-link">Don't have an account? <a href="./register.html">Register here</a></p>
+            <div id="g_id_onload"
+                data-client_id='647768749306-m8ocoj8f7kocbh103u7b021ch76gt9k0.apps.googleusercontent.com'
+                data-context="signin"
+                data-ux_mode="popup"
+                data-login_uri="http://localhost:5000/login"
+                data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin"
+                data-type="standard"
+                data-shape="rectangular"
+                data-theme="outline"
+                data-text="signin_with"
+                data-size="large"
+                data-logo_alignment="left">
+            </div>
+            <script>
+                function handleCredentialResponse(response) {
+                    // Send the token to your backend
+                    fetch('/api/auth/google', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            credential: response.credential
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            window.location.href = '/home.html';
+                        } else {
+                            console.error('Authentication failed:', data.error);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+                }
+            </script>
         </div>
     </div>
     <div class="footer">
