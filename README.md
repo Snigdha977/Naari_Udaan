@@ -1,84 +1,136 @@
-# 🌸 Naari Udaan: AI for Financial Empowerment of Rural Women
+# 🌸 Naari Udaan – AI for Financial Empowerment of Rural Women
 
-## 📌 Project Oveview
-**Naari Udaan** is a  multilingual AI-powered web platform designed to promote financial literacy and micro-investment education among rural women in India. It combines AI chat, sentiment detection, and gamified learning modules in local languages like Hindi, Bengali, and Marathi.
---------
-### 🧠 AI-Powered Interaction Flow
-1. **User Onboarding**
-   - User selects preferred language and avatar.
-   - Flask backend renders welcome screen with dynamic content.
+**Empowering rural women with AI-driven financial literacy, personalized guidance, and gamified learning — all in their native languages.**  
+*Built for social impact, scalable deployment, and inclusive growth.*
 
-2. **Mood & Sentiment Detection**
-   - User types how she is feeling.
-   - Mood detected using `VADER` or `TextBlob`.
-   - Weather API used to change background visuals.
+---
 
-3. **Multilingual AI Chatbot**
-   - GPT-3.5 / FLAN-T5 responds in user's chosen language.
-   - Offers simple, context-aware financial guidance.
+## 📌 Project Overview
 
-4. **Learning Modules + Gamification**
-   - Users complete modules and quizzes.
-   - Rewards system gives coins and badges (via decision-tree logic).
+Naari Udaan is a multilingual AI-powered web platform that promotes financial literacy and micro-investment education among rural women in India. Combining AI chatbots, sentiment detection, and gamified modules in Hindi, Bengali, Marathi, and more, it aims to bridge knowledge gaps and foster financial independence in underserved communities.
 
-5. **Micro-Investment Strategy**
-   - Logistic regression model recommends low-risk financial steps.
-   - Based on quiz score + profile data (age, risk, goals).
+---
 
-6. **Dataset Integration**
-   - 1250-entry dataset includes region, language, literacy, mobile/bank access.
-   - Used for training and rule-based personalization.
+## 🧠 AI-Powered Interaction Flow
+
+### User Onboarding
+- User selects preferred language and avatar.  
+- Flask backend serves dynamic, localized welcome content.
+
+### Mood & Sentiment Detection
+- Users express current mood via text input.  
+- Mood analyzed with VADER/TextBlob for personalized UI experience.  
+- Weather API dynamically adjusts background visuals to user environment.
+
+### Multilingual AI Chatbot
+- GPT-3.5 / FLAN-T5 provides context-aware financial guidance in user’s language.  
+- Conversational, simple, and tailored responses boost engagement.
+
+### Learning Modules + Gamification
+- Interactive modules and quizzes reward progress with coins and badges.  
+- Decision-tree logic adapts content difficulty and suggestions.
+
+### Micro-Investment Strategy
+- Logistic regression model recommends low-risk investments based on profile and quiz data.  
+- Encourages safe, achievable financial steps.
+
+### Dataset Integration
+- Cleaned 1250-entry dataset covers region, language, literacy, banking, mobile access.  
+- Enables personalized, data-driven decision making.
+
+---
+
+## 📊 Flow Diagram
+
+![Flow Diagram](./naari_udaan_flow_diagram.png)
+
+---
+
+## 🖥 Architecture Diagram
+
+![Architecture Diagram](./naari_udaan_architecture_diagram.png)
 
 ---
 
 ## 💻 Tech Stack
-| Area        | Tools / Frameworks                          |
-|-------------|----------------------------------------------|
-| Frontend    | HTML, Tailwind CSS ,Bootstrap,Javascript                       |
-| Backend     | Python Flask                                |
-| AI/ML       | GPT-3.5 / Text t5, VADER, Decision Tree and Logistic Regression |
-| Dataset     | pandas, CSV (cleaned 1250-entry dataset)     |
-| APIs        | OpenAI API, WeatherAPI                      |
+
+| Area       | Tools / Frameworks                                            |
+| ---------- | ------------------------------------------------------------ |
+| Frontend   | 🌐 HTML, 🎨 Tailwind CSS, 🎨 Bootstrap, ⚡ JavaScript         |
+| Backend    | 🐍 Python Flask                                              |
+| AI / ML    | 🤖 GPT-3.5 / Text T5, 🧠 VADER Sentiment Analysis, 🌳 Decision Trees, 📈 Logistic Regression |
+| Dataset    | 📊 pandas, 📄 CSV (cleaned 1250-entry dataset)               |
+| APIs       | 🔑 OpenAI API, ☁️ Weather API                               |
 
 ---
 
 ## 📊 Sample Dataset (Preview)
-| User_ID | Age | Region       | Language | Bank | Mobile | Risk  | Goal               | Quiz_Score |
-|---------|-----|--------------|----------|------|--------|-------|--------------------|------------|
-| 001     | 28  | West Bengal  | Bengali  | Yes  | Yes    | Low   | Start Savings      | 74         |
-| 002     | 34  | Maharashtra  | Marathi  | Yes  | No     | Medium| Dairy Business     | 67         |
+
+| User_ID | Age | Region       | Language | Bank | Mobile | Risk   | Goal           | Quiz_Score |
+|---------|-----|--------------|----------|------|--------|--------|----------------|------------|
+| 001     | 28  | West Bengal  | Bengali  | Yes  | Yes    | Low    | Start Savings  | 74         |
+| 002     | 34  | Maharashtra  | Marathi  | Yes  | No     | Medium | Dairy Business | 67         |
 
 Full dataset available in `Naari_Udaan_Complete_Clean_Dataset.csv`
 
 ---
 
 ## 📈 Project Outcomes
-- Personalized learning and support for rural women
-- Localized AI copilot experience
-- Scalable system with NGO and SHG deployment potential
-- Hackathon-ready with low-code architecture
+
+- Personalized learning and financial empowerment for rural women  
+- Localized AI copilot delivering guidance in native languages  
+- Scalable platform designed for NGO and Self-Help Group deployment  
+- Low-code, hackathon-ready architecture for rapid iteration and community contributions
 
 ---
 
 ## 🚀 Future Scope
-- Voice-based assistant (multilingual)
-- SHG & NGO-level integration
-- Offline-first mobile app version
-- Micro-loan & investment partner integration
+
+- **Multilingual voice assistant:** enable hands-free access and inclusion for illiterate users  
+- **SHG & NGO integration:** build partnerships to expand reach and real-world impact  
+- **Offline-first mobile app:** ensure usability where internet connectivity is unreliable  
+- **Micro-loan & investment partner APIs:** connect users to real financial services  
+- **Advanced financial simulation tools:** help rural entrepreneurs forecast and plan business growth  
+- **AI-powered fraud detection:** protect users’ investments and financial data  
+- **Community-driven content updates:** empower local contributors to add region-specific modules  
 
 ---
 
-## 🤝 Contributors
--  [Snigdha saha ] (Team leader , AI + Web)
--  [Sayantan Sahoo] (active contributor +team member in this project,(web+security handling))
--  [Souradeep Chakraborty] (active contributor +team member in this project,(web)
--  [Rup Debnath] (active contributor +team member in this project,(web))
+## 🤝 Contribution Roadmap
 
+### Good First Issues
+- Add support for additional Indian languages (e.g., Telugu, Kannada)  
+- Create JSON-based quiz loader with new questions  
+- Write basic API route tests for Flask backend  
+
+### Intermediate Issues
+- Implement Redis caching to speed up recommendations  
+- Build role-based authentication and user profiles  
+- Enhance logistic regression model with feature scaling and normalization  
+
+### Advanced Issues
+- Integrate voice assistant with speech recognition and synthesis  
+- Develop offline-first Progressive Web App (PWA) with sync capabilities  
+- Connect to real-time microfinance and investment partner APIs for live recommendations  
+
+---
+
+## 👥 Contributors
+
+- **Snigdha Saha** – Team Leader, AI & Web Development  
+- **Sayantan Sahoo** – Web Development & Security Specialist  
+- **Souradeep Chakraborty** – Frontend & Backend Developer  
+- **Rup Debnath** – Web Developer  
+
+---
 
 ## 📬 Contact
-Have questions or want to collaborate?
-Feel free to reach us at: [snigdhasaha.student@gmail.com]
+
+Have questions or want to collaborate? Reach out:  
+✉️ [snigdhasaha.student@gmail.com](mailto:snigdhasaha.student@gmail.com)  
 
 ---
 
-> ✨ *Naari Udaan empowers rural women through inclusive, intelligent design.*
+✨ *Naari Udaan empowers rural women through inclusive, intelligent design and cutting-edge AI technology.*  
+Your support and contributions can help scale this impact across India.
+
