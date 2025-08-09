@@ -118,9 +118,9 @@ Full dataset available in `Naari_Udaan_Complete_Clean_Dataset.csv`
 ## 👥 Contributors
 
 - **Snigdha Saha** – Team Leader, AI & Web Development  
-- **Sayantan Sahoo** – Web Development & Security Specialist  
-- **Souradeep Chakraborty** – Frontend & Backend Developer  
-- **Rup Debnath** – Web Developer  
+- **Sayantan Sahoo** – Web Development & Security S 
+- **Souradeep Chakraborty** – Frontend Developer  
+- **Rup Debnath** – Frontend Developer  
 
 ---
 
